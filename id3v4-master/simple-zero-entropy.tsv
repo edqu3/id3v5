@@ -1,0 +1,14 @@
+d1	sunny	hot	high	weak	no
+d2	sunny	hot	high	strong	no
+d3	overcast	hot	high	weak	yes
+d4	rain	hot	high	weak	yes
+d5	rain	hot	normal	weak	yes
+d6	rain	hot	normal	strong	no
+d7	overcast	hot	normal	strong	yes
+d8	sunny	cold	high	weak	no
+d9	sunny	cold	normal	weak	yes
+d10	rain	cold	normal	weak	yes
+d11	sunny	cold	normal	strong	yes
+d12	overcast	cold	high	strong	yes
+d13	overcast	cold	normal	weak	yes
+d14	rain	cold	high	strong	no

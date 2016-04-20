@@ -1,0 +1,14 @@
+d1	sunny	hot	0.9	weak	no
+d2	sunny	hot	0.87	strong	no
+d3	overcast	hot	0.93	weak	yes
+d4	rain	mild	0.89	weak	yes
+d5	rain	cool	0.8	weak	yes
+d6	rain	cool	0.59	strong	no
+d7	overcast	cool	0.77	strong	yes
+d8	sunny	mild	0.91	weak	no
+d9	sunny	cool	0.68	weak	yes
+d10	rain	mild	0.84	weak	yes
+d11	sunny	mild	0.72	strong	yes
+d12	overcast	mild	0.49	strong	yes
+d13	overcast	hot	0.74	weak	yes
+d14	rain	mild	0.86	strong	no
