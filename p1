@@ -1,0 +1,47 @@
+P1)
+
+It is true that the there are a finite 
+amount of disrete value assignments for r_nk,
+
+for example for n = 5 data points split between k = 2 clusters.
+There will exist a total of n*k = 10 combinations.
+
+
+
+The K-means algorithm will eventually converge[1], because we are reducing the Distortion measure during each iteration, rather we are minimizing the sum of squared distances between the centroid and the sorrounding points. As proven
+
+
+The distances from the miu_k clusters, 
+
+ after each iteration during 
+the M-Step(The calculation of the new centroid, miu_k)
+
+After each iteration of the 
+
+
+
+
+
+K Means finds the LOCAL MININUM, NOT GLOBAL OPTIMUM.
+
+[1] Converge means that the algorithm will stop due to no new
+	reassignments of membership of the points to new clusters.
+	As an consequence, Miu_k also does not change, or rather it 
+	converges to the "true" mean.
+
+
+
+
+
+
+
+N = 3, K = 2
+A	1	3
+B	2	4
+C	11	33
+
+2^3 = 8
+
+Cluster 0 can have just {}, [A], [B], [C], [AB], [ABC], [AC], [BC]
+Cluster 1 can have just {}, [A], [B], [C], [AB], [ABC], [AC], [BC] - 1
+
