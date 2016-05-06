@@ -1,0 +1,41 @@
+Given K = 2 Clusters
+Set(Subject) = D = data
+Subject_i    = x_i = row from data
+since Subject is defined by 2 attributes, T {A,B}, dimension d = 2
+
+J = Sum of Rows ( Sum of Clusters [r_rows,clusters * || x_row - miu_cluster ||^2 ])
+
+Note that miu_cluster is the vector we are trying to converge to. This converge is the
+end goal for the EM algorithm, more specifically this occurs during the M (Maximization) step 
+of the algorithm. The Prototype Miu_Cluster approaches convergence after every iteration of the
+M step.
+
+then for 7 rows of data, x {0,1,2, ... ,7} and 2 Clusters k {0, 1}
+
+[] + 
+
+Given 3 rows and 2 clusters, these are the all the possible assignments for the
+indicator variable r_nk, n=3, k=2
+
+0,0	1,0	2,0
+0,1	1,1	2,1
+
+where [r_nk = 1 if the nth row is the assigned to the kth cluster and 0 otherwise ]
+also note that, r_nk = 1 for the argmin{ || x_n - miu_k ||^2 }
+Then for a summation of n rows and k clusters: 
+r0,0 + r1,0 + r2,0 + r0,1 + r1,1 + r2,1
+
+i	x1	x2
+A	1	1	
+B	1	0	
+C	0	2
+D	2	4	
+E	3	5
+
+A and C as means, Miu_A = 1, Miu_B = 1
+
+X1					x2
+==					==
+SQRT(|1-1|^2  = 0 + |1-1|^2 = 0) = 0	SQRT(|1-0|^2  = 1, |1-2|^2 = 1 ) = 1.4
+SQRT(|1-1|^2  = 0 + |0-1|^2 = 1) = 1 	SQRT(|1-0|^2  = 1, |0-2|^2 = 4 ) = 2.2
+
